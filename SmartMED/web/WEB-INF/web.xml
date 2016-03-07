@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>UTF8Filter</filter-name>
+        <filter-class>WebApp.UTF8Filter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UTF8Filter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+    <listener>
+        <listener-class>WebApp.SessionListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>App</servlet-name>
+        <servlet-class>SmartMED.App</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>App</servlet-name>
+        <url-pattern>/App</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
