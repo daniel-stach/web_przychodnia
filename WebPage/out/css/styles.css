@@ -73,21 +73,13 @@ body {
     border-bottom: 4px solid #F44336 !important;
 }
 
-header {
+.header-home {
     height: 100%;
     background-position: center center;
     background-size: cover;
     background-blend-mode: multiply;
-}
-
-.header-home {
     background-color: DimGray;
     background-image: url(../img/bg/header-home-min.jpg);
-}
-
-.header-register {
-    background-color: White;
-    background-image: url(../img/bg/header-register-min.jpg);
 }
 
 .slogan {
