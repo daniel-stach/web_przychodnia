@@ -1,3 +1,5 @@
+<%@ page pageEncoding="UTF-8"%>
+
 <!-- for sticky footer -->
 <div class="mdl-layout-spacer"></div>
 <footer class="mdl-mini-footer" style="padding: 32px 40px;">
@@ -14,9 +16,3 @@
         </ul>
     </div>
 </footer>
-</main>
-</div>
-<script src="js/material.min.js"></script>
-</body>
-
-</html>

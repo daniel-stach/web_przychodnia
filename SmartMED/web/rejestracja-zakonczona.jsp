@@ -1,0 +1,51 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%@ include file="/WEB-INF/jspf/JspHeader.jspf" %>
+
+<%@ include file="/WEB-INF/jspf/HtmlHeader.jspf" %>
+<%@ include file="/WEB-INF/jspf/HtmlMenu.jspf" %>
+
+
+
+<script>
+var active = 1;
+$('.mdl-navigation').eq(0).children().eq(active).addClass('active');
+$('.mdl-navigation').eq(1).children().eq(active).addClass('active');
+</script>
+<header class="header-register">
+    <div class="more-section">
+        <div class="section-title mdl-typography--display-1-color-contrast">Rejestracja</div>
+        <div class="card-container mdl-grid">
+            <!-- Wide card with share menu button -->
+            <style>
+            .demo-card-wide.mdl-card {
+                width: 100%;
+            }
+            
+            .demo-card-wide > .mdl-card__title {
+                color: #fff;
+                height: 280px;
+                background: url('./img/success-min.jpg') center / cover;
+            }
+            
+            .demo-card-wide > .mdl-card__menu {
+                color: #fff;
+            }
+            </style>
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Dziękujemy</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Rejestracja zakończona. 
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<%-- <%@ include file="/WEB-INF/jspf/HtmlFooterPart1.jspf" %> --%>
+<%@ include file="/WEB-INF/jspf/HtmlFooterPart2.jspf" %>

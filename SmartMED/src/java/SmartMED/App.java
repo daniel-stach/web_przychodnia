@@ -17,7 +17,7 @@ public class App extends HttpServlet
 
         if (controller == null)
         {
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            request.getRequestDispatcher("index.jsp").forward(request, response);
             return;
         }
 
@@ -28,7 +28,7 @@ public class App extends HttpServlet
         EWebPage resultPage = controller.GetResultPage();
         if (resultPage == null)
         {
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            request.getRequestDispatcher("index.jsp").forward(request, response);
         }
         else
         {

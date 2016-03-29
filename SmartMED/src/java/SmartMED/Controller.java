@@ -51,11 +51,9 @@ public class Controller extends WebApp.AppController
             case Example:
                 ProcessExample();
                 break;
-            case Login:
-                ProcessLogin();
+            case Register:
+                ProcessRegister();
                 break;
-            default:
-                SetResultPage(EWebPage.NotFound);
         }
     }
 
@@ -72,14 +70,20 @@ public class Controller extends WebApp.AppController
         SetResultPage(EWebPage.Example);
     }
 
-    private void ProcessLogin()
+    private void ProcessRegister()
     {
-        // TODO: implement a login system
+        String firstname = CurrentRequest.getParameter("firstname");
+        String surname = CurrentRequest.getParameter("surname");
         String email = CurrentRequest.getParameter("email");
-        String password = CurrentRequest.getParameter("password");
-        System.out.println(email);
-        System.out.println(password);
+        String pesel = CurrentRequest.getParameter("pesel");
+        String phone = CurrentRequest.getParameter("phone");
 
-        ProcessExample();
+        System.out.println(firstname);
+        System.out.println(surname);
+        System.out.println(email);
+        System.out.println(pesel);
+        System.out.println(phone);
+
+        SetResultPage(EWebPage.RegisterSucces);
     }
 }
