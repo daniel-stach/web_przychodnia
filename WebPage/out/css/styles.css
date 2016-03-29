@@ -74,6 +74,7 @@ body {
 }
 
 .header-home {
+    min-height: 100vh;
     height: 100vh;
     background-position: center center;
     background-size: cover;
