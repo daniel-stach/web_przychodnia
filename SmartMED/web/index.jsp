@@ -10,8 +10,6 @@
         <a href="App?op=login&email=test@wp.pl&password=123456">Auto Login</a>
         <br>
         <a href="login.jsp">Login</a>
-        <br>
-        <a href="register.jsp">Register</a>
     </body>
 
 </html>
