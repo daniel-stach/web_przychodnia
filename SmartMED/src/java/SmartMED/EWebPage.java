@@ -3,7 +3,7 @@ package SmartMED;
 public enum EWebPage
 {
     Example("example.jsp"),
-    NotFound("404.jsp");
+    RegisterSucces("rejestracja-zakonczona.jsp");
 
     public final String PageURL;
 

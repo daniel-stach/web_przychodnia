@@ -3,7 +3,7 @@ package SmartMED;
 public enum EAppOperation
 {
     Example("example"),
-    Login("login"),
+    Register("register"),
     InvalidOperation("invalid");
 
     public final String OperationCode;
