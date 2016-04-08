@@ -1,0 +1,57 @@
+﻿<script>
+var active = 4;
+$('.mdl-navigation').eq(0).children().eq(active).addClass('active');
+$('.mdl-navigation').eq(1).children().eq(active).addClass('active');
+</script>
+<header class="header-register">
+    <div class="more-section" style="margin-left: 2%;">
+        <div class="section-title mdl-typography--display-1-color-contrast">Edycja wizyty</div>
+        <div class="card-container mdl-grid">
+			<div>
+				 
+				 <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp">
+				<thead>
+		<tr>
+				<th class="mdl-data-table__cell--non-numeric">Imię lekarza</th>
+				<th>Nazwisko lekarza</th>
+				<th>Data przyjecia</th>
+				<th>Godzina przyjecia</th>
+				<th>Imię pacjneta</th>
+				<th>Nazwisko pacjneta</th>
+				<th>PESEL</th>
+				<th>Nr telefonu</th>
+					</tr>
+				  </thead>
+				  <tbody>
+							<tr>
+							  <td class="mdl-data-table__cell--non-numeric">
+							  <form action="imie_lekarza">
+								<input type="text" name="nazwa" />
+							  </form></td>
+							  <td>AAaa</td>
+							  <td>AAaa</td>
+							  <td>AAaa</td>
+							  <td>AAaa</td>
+							  <td>AAaa</td>
+							  <td>99999999999</td>
+							  <td>123456789</td>
+							  <td>
+							  <button class="mdl-button mdl-js-button mdl-button--raised">
+								Zapisz
+							  </button>
+							  <button class="mdl-button mdl-js-button mdl-button--raised" >
+								Usuń
+							  </button>
+							  </td>
+							  
+							</tr>
+				  </tbody>
+				</table>
+				<button class="mdl-button mdl-js-button mdl-button--raised">
+					Dodaj wizytę
+				</button>
+
+            </div>
+        </div>
+    </div>
+</header>
