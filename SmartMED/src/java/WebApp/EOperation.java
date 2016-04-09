@@ -1,6 +1,6 @@
-package SmartMED;
+package WebApp;
 
-public enum EAppOperation
+public enum EOperation
 {
     Example("example"),
     Register("register"),
@@ -10,7 +10,7 @@ public enum EAppOperation
 
     public static final String OperationParamName = "op";   // name of the HTML request parameter
 
-    private EAppOperation(String operationCode)
+    private EOperation(String operationCode)
     {
         OperationCode = operationCode;
     }
@@ -20,11 +20,11 @@ public enum EAppOperation
         return OperationCode;
     }
 
-    public static EAppOperation ParseString(String str)
+    public static EOperation ParseString(String str)
     {
         if (str != null)
         {
-            for (EAppOperation operation : EAppOperation.values())
+            for (EOperation operation : EOperation.values())
             {
                 if (operation.OperationCode.compareTo(str) == 0)
                 {

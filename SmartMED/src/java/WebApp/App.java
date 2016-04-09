@@ -1,38 +1,33 @@
-package SmartMED;
+package WebApp;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class App extends HttpServlet
 {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        HttpSession httpSession = request.getSession();
-        AppSession appSession = (AppSession) httpSession.getAttribute("appSession");
-        Controller controller = appSession.GetController();
+        HttpSession session = request.getSession(true);
 
-        if (controller == null)
-        {
-            request.getRequestDispatcher("index.jsp").forward(request, response);
-            return;
-        }
+        Controller controller = new Controller();
+        
+        controller.SetSession(session);
+        
+        controller.ProcessRequest(request);
+        
+        EPage page = controller.GetPage();
 
-        controller.BeginRequest(request);
-        controller.ProcessRequest();
-        controller.EndRequest();
-
-        EWebPage resultPage = controller.GetResultPage();
-        if (resultPage == null)
+        if (page == null)
         {
             request.getRequestDispatcher("index.jsp").forward(request, response);
         }
         else
         {
-            request.getRequestDispatcher(resultPage.PageURL).forward(request, response);
+            request.getRequestDispatcher(page.URL).forward(request, response);
         }
     }
 
@@ -43,8 +38,7 @@ public class App extends HttpServlet
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         processRequest(request, response);
     }

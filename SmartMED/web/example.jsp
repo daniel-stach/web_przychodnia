@@ -10,9 +10,9 @@
     <body>
         <h1>${example.text}</h1>
         <br>
-        <a href="<%=controller.GetAppLink(SmartMED.EAppOperation.Example)%>">Example Operation 1</a>
+        <a href="<%=controller.GetAppLink(WebApp.EOperation.Example)%>">Example Operation 1</a>
         <br>
-        <a href="<%=controller.GetAppLink(SmartMED.EAppOperation.Example)%>&param=NewElo520">Example Operation 2</a>
+        <a href="<%=controller.GetAppLink(WebApp.EOperation.Example)%>&param=NewElo520">Example Operation 2</a>
     </body>
 
 </html>
