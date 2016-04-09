@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>SmartMED</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-2.2.2.min.js"></script>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<div class="mdl-layout__header mdl-layout__header--waterfall">
+    <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title center-logo-on-mobile">
+            <img class="logo-image" src="img/logo-min.png">
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="navigation-container">
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">O przychodni</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="rejestracja.html">Rejestracja</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="lekarze.html">Lekarze</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="kontakt.html">Kontakt</a>
+				<a class="mdl-navigation__link mdl-typography--text-uppercase" href="zaloguj.html">Zaloguj</a>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title" style="padding-left: 40px;">
+        <img class="logo-image" src="img/logo-min.png">
+    </span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">O przychodni</a>
+        <a class="mdl-navigation__link" href="rejestracja.html">Rejestracja</a>
+        <a class="mdl-navigation__link" href="lekarze.html">Lekarze</a>
+        <a class="mdl-navigation__link" href="kontakt.html">Kontakt</a>
+		<a class="mdl-navigation__link" href="zaloguj.html">Zaloguj</a>
+    </nav>
+</div>
+<main class="mdl-layout__content">
+<a name="top"></a>
+<script>
+var active = 4;
+$('.mdl-navigation').eq(0).children().eq(active).addClass('active');
+$('.mdl-navigation').eq(1).children().eq(active).addClass('active');
+</script>
+
+
+<header>
+
+<div style="margin: 0 auto; text-align: center;">
+<div class="more-section">
+
+        <div class="card-container mdl-grid">
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--4dp" style="margin-left: 35%;">
+                <div class="mdl-card__title mdl-color--indigo mdl-color-text--white">
+                    <h2 class="mdl-card__title-text" style="color: White;">Logowanie</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z]*" id="login">
+                            <label class="mdl-textfield__label" for="login">Login</label>
+                            <span class="mdl-textfield__error">Tylko znaki alfabetu i bez spacji</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z]* [0-9]" id="haslo">
+                            <label class="mdl-textfield__label" for="haslo">Hasło</label>
+                            <span class="mdl-textfield__error">Tylko znaki alfabetu i cyfry</span>
+                        </div>
+                        
+                    </form>
+                
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="float: right;">Zaloguj</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</header><!-- for sticky footer -->
+<div class="mdl-layout-spacer"></div>
+<footer class="mdl-mini-footer" style="padding: 32px 40px;">
+    <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">
+            <img class="logo-image" src="img/logo-min.png">
+        </div>
+    </div>
+    <div class="mdl-mini-footer__right-section">
+        <ul class="mdl-mini-footer__link-list">
+            <a class="mdl-typography--font-light" href="#top">
+                Na górę <i class="icon-expand_less"></i>
+            </a>
+        </ul>
+    </div>
+</footer>
+</main>
+</div>
+<script src="js/material.min.js"></script>
+</body>
+
+</html>
