@@ -1,4 +1,4 @@
-package WebApp;
+package App;
 
 import SmartMED.*;
 import javax.servlet.http.HttpServletRequest;
