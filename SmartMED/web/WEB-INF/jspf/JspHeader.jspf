@@ -1,5 +1,5 @@
 <%@ page pageEncoding="UTF-8"%>
 <%
-    WebApp.Controller controller = new WebApp.Controller();
+    App.Controller controller = new App.Controller();
     pageContext.setAttribute("controller", controller);
 %>

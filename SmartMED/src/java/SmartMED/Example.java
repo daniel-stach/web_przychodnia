@@ -1,6 +1,6 @@
 package SmartMED;
 
-import WebApp.Controller;
+import App.Controller;
 import javax.servlet.http.HttpServletRequest;
 
 public class Example

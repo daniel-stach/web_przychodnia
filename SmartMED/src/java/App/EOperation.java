@@ -1,4 +1,4 @@
-package WebApp;
+package App;
 
 public enum EOperation
 {
