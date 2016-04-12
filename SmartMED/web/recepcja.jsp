@@ -1,4 +1,13 @@
-﻿<header>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%@ include file="/WEB-INF/jspf/JspHeader.jspf" %>
+
+<%@ include file="/WEB-INF/jspf/HtmlHeader.jspf" %>
+<%@ include file="/WEB-INF/jspf/HtmlMenu.jspf" %>
+
+
+
+<header>
     <div class="more-section" style="max-width: 1600px;">
         <div class="section-title mdl-typography--display-1-color-contrast">Tabela wizyt pacjentów</div>
         <div class="card-container mdl-grid">
@@ -41,3 +50,9 @@
         </div>
     </div>
 </header>
+
+
+
+
+<%-- <%@ include file="/WEB-INF/jspf/HtmlFooterPart1.jspf" %> --%>
+<%@ include file="/WEB-INF/jspf/HtmlFooterPart2.jspf" %>

@@ -4,6 +4,7 @@ public enum EOperation
 {
     Example("example"),
     Register("register"),
+    Login("login"),
     InvalidOperation("invalid");
 
     public final String OperationCode;

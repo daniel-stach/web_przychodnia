@@ -253,6 +253,5 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
 
 
 
-
 <%-- <%@ include file="/WEB-INF/jspf/HtmlFooterPart1.jspf" %> --%>
 <%@ include file="/WEB-INF/jspf/HtmlFooterPart2.jspf" %>

@@ -12,6 +12,7 @@
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="rejestracja.jsp">Rejestracja</a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="lekarze.jsp">Lekarze</a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="kontakt.jsp">Kontakt</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="zaloguj.jsp">Zaloguj</a>
             </nav>
         </div>
     </div>
@@ -25,7 +26,9 @@
         <a class="mdl-navigation__link" href="rejestracja.jsp">Rejestracja</a>
         <a class="mdl-navigation__link" href="lekarze.jsp">Lekarze</a>
         <a class="mdl-navigation__link" href="kontakt.jsp">Kontakt</a>
+        <a class="mdl-navigation__link" href="zaloguj.jsp">Zaloguj</a>
     </nav>
 </div>
 <main class="mdl-layout__content">
     <a name="top"></a>
+

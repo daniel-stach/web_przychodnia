@@ -2,15 +2,15 @@ package App;
 
 import java.sql.*;
 
-public final class Database
+public final class DatabaseAccess
 {
     private Connection Connect = null;
 
-    public Database()
+    public DatabaseAccess()
     {
     }
 
-    public Database(String url, String user, String pass)
+    public DatabaseAccess(String url, String user, String pass)
     {
         Connect(url, user, pass);
     }
