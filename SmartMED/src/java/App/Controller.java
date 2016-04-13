@@ -1,13 +1,8 @@
 package App;
 
 import SmartMED.*;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
+import java.sql.*;
+import javax.servlet.http.*;
 
 public class Controller
 {
@@ -150,6 +145,14 @@ public class Controller
 
         if (isLogged)
         {
+            Reception reception = (Reception) Session.getAttribute("reception");
+            if (reception == null)
+            {
+                reception = new Reception();
+                Session.setAttribute("reception", reception);
+            }
+            reception.Generate(this);
+            
             SetPage(EPage.Reception);
         }
         else

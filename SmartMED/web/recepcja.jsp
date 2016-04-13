@@ -25,23 +25,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>AAaa</td>
-                        <td>AAaa</td>
-                        <td>AAaa</td>
-                        <td>AAaa</td>
-                        <td>AAaa</td>
-                        <td>99999999999</td>
-                        <td>123456789</td>
-                        <td>
-                            <a href="#" class="mdl-button mdl-js-button mdl-button--raised">
-                                    Edytuj
-                                </a> &nbsp;
-                            <a href="#" class="mdl-button mdl-js-button mdl-button--raised">
-                                    Usuń
-                                </a>
-                        </td>
-                    </tr>
+                    ${reception.htmlTableRows}
                 </tbody>
             </table>
             <button class="mdl-button mdl-js-button mdl-button--raised" style="margin-top: 20px;">
