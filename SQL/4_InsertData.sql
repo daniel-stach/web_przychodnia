@@ -12,3 +12,7 @@ INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-21 18:00:00',
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-22 14:00:00', 3, NULL);
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-22 15:00:00', 3, NULL);
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-22 16:00:00', 3, NULL);
+INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Joanna', 'Kowalska', 'Onkolog');
+INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Genowefa', 'Pigwa', 'Alergolog');
+INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Juliana', 'Hurka', 'Ginekolog');
+INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Zbigniew', 'Wiszniewski', 'Onkolog');
