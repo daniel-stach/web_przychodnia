@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS pacjenci (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS terminy (
-  id int(11) NOT NULL,
+  id int(11) NOT NULL AUTO_INCREMENT,
   data datetime NOT NULL,
   id_lekarz int(11) NOT NULL,
   id_pacjent int(11) DEFAULT NULL,
