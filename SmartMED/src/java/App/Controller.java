@@ -53,46 +53,48 @@ public class Controller
 
         switch (EOperation.ParseString(GetRequest().getParameter("op")))
         {
-            case Example:
-                ProcessExample();
+            case GenerateRegister:
+                GenerateRegister();
                 break;
-            case Register:
-                ProcessRegister();
+            case ExecuteRegister:
+                ExecuteRegister();
                 break;
-            case Login:
-                ProcessLogin();
+            case ExecuteLogin:
+                ExecuteLogin();
                 break;
         }
 
         SetRequest(null);
     }
 
-    private void ProcessExample()
+    private void GenerateRegister()
     {
-        Example example = (Example) Session.getAttribute("example");
-        if (example == null)
+        Registration registration = (Registration) Session.getAttribute("registration");
+        if (registration == null)
         {
-            example = new Example();
-            Session.setAttribute("example", example);
+            registration = new Registration();
+            Session.setAttribute("registration", registration);
         }
-        example.Generate(this);
+        registration.Generate(this);
 
-        SetPage(EPage.Example);
+        SetPage(EPage.Register);
     }
 
-    private void ProcessRegister()
+    private void ExecuteRegister()
     {
         String firstname = Request.getParameter("firstname");
         String surname = Request.getParameter("surname");
         String email = Request.getParameter("email");
         String pesel = Request.getParameter("pesel");
         String phone = Request.getParameter("phone");
+        String visitID = Request.getParameter("visitID");
 
         System.out.println(firstname);
         System.out.println(surname);
         System.out.println(email);
         System.out.println(pesel);
         System.out.println(phone);
+        System.out.println(visitID);
 
         DatabaseAccess databaseAccess = new DatabaseAccess();
         databaseAccess.Connect("localhost/SmartMED", "SmartMED", "*gi3q3r*");
@@ -107,6 +109,18 @@ public class Controller
             stmt.setObject(++index, pesel);
             stmt.setObject(++index, phone);
             stmt.executeUpdate();
+
+            ResultSet rs = databaseAccess.Select("SELECT id FROM pacjenci WHERE pesel=" + pesel + ";");
+
+            int pacjentID = -1;
+
+            while (rs.next())
+            {
+                pacjentID = rs.getInt(1);
+            }
+            System.out.println(pacjentID);
+
+            databaseAccess.ExecuteQuery("UPDATE terminy SET id_pacjent=" + pacjentID + " WHERE id=" + visitID + ";");
         }
         catch (SQLException ex)
         {
@@ -116,7 +130,7 @@ public class Controller
         SetPage(EPage.RegisterSucces);
     }
 
-    private void ProcessLogin()
+    private void ExecuteLogin()
     {
         String login = Request.getParameter("login");
         String haslo = Request.getParameter("haslo");
@@ -152,7 +166,7 @@ public class Controller
                 Session.setAttribute("reception", reception);
             }
             reception.Generate(this);
-            
+
             SetPage(EPage.Reception);
         }
         else

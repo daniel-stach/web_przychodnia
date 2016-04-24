@@ -15,18 +15,24 @@
 <header class="header-register">
     <div class="more-section">
         <div class="section-title mdl-typography--display-1-color-contrast">Rejestracja</div>
-        <div class="card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__title mdl-color--brown mdl-color-text--white">
-                    <h2 class="mdl-card__title-text" style="color: White;">Wybierz termin</h2>
+
+        <form name="registerForm" onsubmit="return ValidateForm()" method="post" action="App">
+
+            <div class="card-container mdl-grid">
+                <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title mdl-color--brown mdl-color-text--white">
+                        <h2 class="mdl-card__title-text" style="color: White;">Wybierz termin</h2>
+                    </div>
+                    <ul class="dl-list" style="margin-left: -35px; overflow-y: scroll; height:400px;">
+
+                        ${registration.htmlVisits}
+
+                    </ul>
                 </div>
-                Kalendarz
-            </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__title mdl-color--indigo mdl-color-text--white">
-                    <h2 class="mdl-card__title-text" style="color: White;">Uzupełnij dane</h2>
-                </div>
-                <form name="registerForm" onsubmit="return ValidateForm()" method="post" action="App">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title mdl-color--indigo mdl-color-text--white">
+                        <h2 class="mdl-card__title-text" style="color: White;">Uzupełnij dane</h2>
+                    </div>
                     <div class="mdl-card__supporting-text">
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                             <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z]*" id="firstname" name="firstname">
@@ -59,11 +65,15 @@
                         </label>
                     </div>
                     <div class="mdl-card__actions">
-                        <button type="submit" name="op" value="register" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="float: right;">Wyślij</button>
+
+                        <button type="submit" name="op" value="execute-register" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="float: right;">Wyślij</button>
+
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+
+        </form>
+
     </div>
 </header>
 <script>
