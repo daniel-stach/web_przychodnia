@@ -1,9 +1,8 @@
 INSERT INTO konta (id, login, haslo) VALUES (1, 'Beata', 'elo520yo');
-INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Beata', 'Koziol', 'koziol@gmail.com', '01010190876', '098765432');
-INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Waldemar', 'Koziol', 'waldek_koziol@gmail.com', '02020290876', '098767732');
-INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Zbigniew', 'Szepczak', 'zbychu@gmail.com', '12345678900', '678456765');
-INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Stefano', 'Terrazino', 'stefek@tlen.pl', '98567854765', '987123345');
-INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Grzegorz', 'Podpalka', 'g_palka@icloud.com', '87020265456', '765456987');
+INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Joanna', 'Kowalska', 'Onkolog');
+INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Genowefa', 'Pigwa', 'Alergolog');
+INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Juliana', 'Hurka', 'Ginekolog');
+INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Zbigniew', 'Wiszniewski', 'Onkolog');
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-21 14:00:00', 1, NULL);
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-21 15:00:00', 1, NULL);
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-21 16:00:00', 1, NULL);
@@ -12,7 +11,8 @@ INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-21 18:00:00',
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-22 14:00:00', 3, NULL);
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-22 15:00:00', 3, NULL);
 INSERT INTO terminy (data, id_lekarz, id_pacjent) VALUES ('2016-04-22 16:00:00', 3, NULL);
-INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Joanna', 'Kowalska', 'Onkolog');
-INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Genowefa', 'Pigwa', 'Alergolog');
-INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Juliana', 'Hurka', 'Ginekolog');
-INSERT INTO lekarze (imie, nazwisko, specjalizacja) VALUES ('Zbigniew', 'Wiszniewski', 'Onkolog');
+INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Beata', 'Koziol', 'koziol@gmail.com', '01010190876', '098765432');
+INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Waldemar', 'Koziol', 'waldek_koziol@gmail.com', '02020290876', '098767732');
+INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Zbigniew', 'Szepczak', 'zbychu@gmail.com', '12345678900', '678456765');
+INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Stefano', 'Terrazino', 'stefek@tlen.pl', '98567854765', '987123345');
+INSERT INTO pacjenci (imie, nazwisko, email, pesel, telefon) VALUES ('Grzegorz', 'Podpalka', 'g_palka@icloud.com', '87020265456', '765456987');
