@@ -35,7 +35,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -53,7 +53,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -71,7 +71,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -89,7 +89,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -111,7 +111,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -129,7 +129,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -147,7 +147,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -165,7 +165,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -187,7 +187,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -205,7 +205,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -223,7 +223,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
@@ -241,7 +241,7 @@ $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
                         </span>
                     </div>
                     <div class="mdl-card__actions">
-                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="rejestracja.jsp">
+                        <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="App?op=register">
                             Umów się na wizytę <i class="icon-keyboard_arrow_right"></i>
                         </a>
                     </div>
