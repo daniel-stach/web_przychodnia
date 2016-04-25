@@ -2,9 +2,9 @@ package App;
 
 public enum EOperation
 {
-    Example("example"),
-    Register("register"),
-    Login("login"),
+    GenerateRegister("register"),
+    ExecuteRegister("execute-register"),
+    ExecuteLogin("execute-login"),
     InvalidOperation("invalid");
 
     public final String OperationCode;

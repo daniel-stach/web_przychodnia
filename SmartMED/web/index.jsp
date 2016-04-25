@@ -23,7 +23,7 @@
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 50px; background-color: #03A9F4; color: White;" onclick="location.href = '#goto'">
             O nas
         </button>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 50px; background-color: #F44336; color: White;" onclick="location.href = 'rejestracja.jsp'">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 50px; background-color: #F44336; color: White;" onclick="location.href = 'App?op=register'">
             Umów się do lekarza
         </button>
     </div>
@@ -71,7 +71,7 @@
         </div>
     </div>
     <div class="mdl-typography--text-center">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 50px; background-color: #F44336; color: White;" onclick="location.href = 'rejestracja.jsp'">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 50px; background-color: #F44336; color: White;" onclick="location.href = 'App?op=register'">
             Umów się do lekarza
         </button>
     </div>

@@ -2,7 +2,7 @@ package App;
 
 public enum EPage
 {
-    Example("example.jsp"),
+    Register("rejestracja.jsp"),
     RegisterSucces("rejestracja-zakonczona.jsp"),
     LoginFail("nieloguj.jsp"),
     Reception("recepcja.jsp");
