@@ -110,6 +110,10 @@
             result = false;
         }
 
+        if (!$('input[name=visitID]:checked').length > 0) {
+            result = false;
+        }
+
         return result;
     }
 </script>

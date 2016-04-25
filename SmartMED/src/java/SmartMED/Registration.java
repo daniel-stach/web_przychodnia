@@ -18,7 +18,7 @@ public class Registration
 
         try
         {
-            ResultSet rs = databaseAccess.Select("SELECT t.id, t.`data`, l.imie, l.nazwisko, l.specjalizacja FROM terminy AS t INNER JOIN lekarze AS l ON t.id_lekarz = l.id WHERE id_pacjent IS NULL;");
+            ResultSet rs = databaseAccess.Select("SELECT t.id, t.`data`, l.imie, l.nazwisko, l.specjalizacja FROM terminy AS t INNER JOIN lekarze AS l ON t.id_lekarz = l.id WHERE id_pacjent IS NULL AND t.`data` > Now();");
 
             int radioIterator = 0;
 
