@@ -18,8 +18,14 @@ public class Reception
 
         try
         {
+            String removeByID = controller.GetRequest().getParameter("removeByID");
+            if (removeByID != null)
+            {
+                databaseAccess.ExecuteQuery("DELETE FROM terminy WHERE id=" + removeByID + ";");
+            }
+
             // tabela 1
-            ResultSet rs = databaseAccess.Select("SELECT l.imie, l.nazwisko, t.data, p.imie, p.nazwisko, p.email, p.pesel, p.telefon FROM terminy AS t INNER JOIN pacjenci AS p ON t.id_pacjent=p.id INNER JOIN lekarze AS l ON t.id_lekarz=l.id WHERE id_pacjent IS NOT NULL;");
+            ResultSet rs = databaseAccess.Select("SELECT l.imie, l.nazwisko, t.data, p.imie, p.nazwisko, p.email, p.pesel, p.telefon, t.id FROM terminy AS t INNER JOIN pacjenci AS p ON t.id_pacjent=p.id INNER JOIN lekarze AS l ON t.id_lekarz=l.id WHERE id_pacjent IS NOT NULL;");
 
             while (rs.next())
             {
@@ -46,11 +52,13 @@ public class Reception
                 HtmlTableRows += "<td>" + rs.getObject(++p) + "</td>";
                 HtmlTableRows += "<td>" + rs.getObject(++p) + "</td>";
 
+                String idTerminu = rs.getString(++p);
+
                 HtmlTableRows += "<td>"
                         + "    <a href=\"#\" class=\"mdl-button mdl-js-button mdl-button--raised\">"
                         + "                                    Edytuj"
                         + "                                </a> &nbsp;"
-                        + "    <a href=\"#\" class=\"mdl-button mdl-js-button mdl-button--raised\">"
+                        + "    <a id=\"" + idTerminu + "\" class=\"show-dialog mdl-button mdl-js-button mdl-button--raised\">"
                         + "                                    Usuń"
                         + "                                </a>"
                         + "</td>";
@@ -61,7 +69,7 @@ public class Reception
             // tabela 2
             HtmlTableRows2 = "";
 
-            ResultSet rs2 = databaseAccess.Select("SELECT l.imie, l.nazwisko, t.data FROM terminy AS t INNER JOIN lekarze AS l ON t.id_lekarz=l.id");
+            ResultSet rs2 = databaseAccess.Select("SELECT l.imie, l.nazwisko, t.data, t.id FROM terminy AS t INNER JOIN lekarze AS l ON t.id_lekarz=l.id");
 
             while (rs2.next())
             {
@@ -83,16 +91,14 @@ public class Reception
                     System.err.println(ex);
                 }
                 HtmlTableRows2 += "<td>" + date + "</td>";
-                HtmlTableRows2 += "<td> - </td>";
-                HtmlTableRows2 += "<td> - </td>";
-                HtmlTableRows2 += "<td> - </td>";
-                HtmlTableRows2 += "<td> - </td>";
+
+                String idTerminu = rs2.getString(++p);
 
                 HtmlTableRows2 += "<td>"
                         + "    <a href=\"#\" class=\"mdl-button mdl-js-button mdl-button--raised\">"
                         + "                                    Edytuj"
                         + "                                </a> &nbsp;"
-                        + "    <a href=\"#\" class=\"mdl-button mdl-js-button mdl-button--raised\">"
+                        + "    <a id=\"" + idTerminu + "\" class=\"show-dialog mdl-button mdl-js-button mdl-button--raised\">"
                         + "                                    Usuń"
                         + "                                </a>"
                         + "</td>";

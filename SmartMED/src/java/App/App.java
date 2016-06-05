@@ -6,17 +6,22 @@ import javax.servlet.http.*;
 
 public class App extends HttpServlet
 {
+    Controller MyController = null;
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         HttpSession session = request.getSession(true);
 
-        Controller controller = new Controller();
-        
-        controller.SetSession(session);
-        
-        controller.ProcessRequest(request);
-        
-        EPage page = controller.GetPage();
+        if (MyController == null)
+        {
+            MyController = new Controller();
+        }
+
+        MyController.SetSession(session);
+
+        MyController.ProcessRequest(request);
+
+        EPage page = MyController.GetPage();
 
         if (page == null)
         {

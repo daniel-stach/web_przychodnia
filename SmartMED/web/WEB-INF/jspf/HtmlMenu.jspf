@@ -9,7 +9,7 @@
         <div class="navigation-container">
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.jsp">O przychodni</a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="App?op=register">Rejestracja</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="App?op=register&a=0">Rejestracja</a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="lekarze.jsp">Lekarze</a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="kontakt.jsp">Kontakt</a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="zaloguj.jsp">Dla personelu</a>
