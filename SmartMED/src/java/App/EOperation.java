@@ -3,6 +3,7 @@ package App;
 public enum EOperation
 {
     GenerateRegister("register"),
+    GenerateReception("reception"),
     ExecuteRegister("execute-register"),
     ExecuteLogin("execute-login"),
     InvalidOperation("invalid");

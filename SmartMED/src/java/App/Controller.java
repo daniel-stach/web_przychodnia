@@ -10,6 +10,13 @@ public class Controller
     private HttpSession Session;
     private EPage ResultPage;
 
+    public boolean BackToR = false;
+
+    public boolean getBackToR()
+    {
+        return BackToR;
+    }
+
     public HttpServletRequest GetRequest()
     {
         return Request;
@@ -56,6 +63,9 @@ public class Controller
             case GenerateRegister:
                 GenerateRegister();
                 break;
+            case GenerateReception:
+                GenerateReception();
+                break;
             case ExecuteRegister:
                 ExecuteRegister();
                 break;
@@ -78,6 +88,19 @@ public class Controller
         registration.Generate(this);
 
         SetPage(EPage.Register);
+    }
+
+    private void GenerateReception()
+    {
+        Reception reception = (Reception) Session.getAttribute("reception");
+        if (reception == null)
+        {
+            reception = new Reception();
+            Session.setAttribute("reception", reception);
+        }
+        reception.Generate(this);
+
+        SetPage(EPage.Reception);
     }
 
     private void ExecuteRegister()
@@ -127,7 +150,15 @@ public class Controller
             System.err.println(ex);
         }
 
-        SetPage(EPage.RegisterSucces);
+        if (BackToR)
+        {
+            GenerateReception();
+            SetPage(EPage.Reception);
+        }
+        else
+        {
+            SetPage(EPage.RegisterSucces);
+        }
     }
 
     private void ExecuteLogin()
@@ -159,15 +190,7 @@ public class Controller
 
         if (isLogged)
         {
-            Reception reception = (Reception) Session.getAttribute("reception");
-            if (reception == null)
-            {
-                reception = new Reception();
-                Session.setAttribute("reception", reception);
-            }
-            reception.Generate(this);
-
-            SetPage(EPage.Reception);
+            GenerateReception();
         }
         else
         {

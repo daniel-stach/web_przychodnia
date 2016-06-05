@@ -59,10 +59,14 @@
                             <label class="mdl-textfield__label" for="phone">Telefon</label>
                             <span class="mdl-textfield__error">Niepoprawny numer telefonu</span>
                         </div>
-                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                            <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label" style="font-size: 9px;">Wyrażam zgodę na przetwarzanie moich danych</span>
-                        </label>
+
+                        <c:if test="false">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label" style="font-size: 9px;">Wyrażam zgodę na przetwarzanie moich danych</span>
+                            </label>
+                        </c:if>
+
                     </div>
                     <div class="mdl-card__actions">
 
