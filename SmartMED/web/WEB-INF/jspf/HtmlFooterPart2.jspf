@@ -3,6 +3,44 @@
 </main>
 </div>
 <script src="js/material.min.js"></script>
+
+
+
+<dialog class="mdl-dialog">
+    <div class="mdl-dialog__content">
+        <p>
+            A Czy na pewno usunąć umówiąną wizytę ?
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button id="remove-tak" type="button" class="mdl-button">Tak</button>
+        <button type="button" class="mdl-button close">Nie</button>
+    </div>
+</dialog>
+<script>
+    var dialog = document.querySelector('dialog');
+
+    if (!dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+    }
+
+    var RemoveID;
+
+    $('.show-dialog').click(function (e) {
+        RemoveID = e.target.id;
+        dialog.showModal();
+    });
+
+    dialog.querySelector('.close').addEventListener('click', function () {
+        dialog.close();
+    });
+
+    $('#remove-tak').click(function () {
+        dialog.close();
+        window.location = 'App?op=reception&removeByID=' + RemoveID;
+    });
+</script>
+
 </body>
 
 </html>

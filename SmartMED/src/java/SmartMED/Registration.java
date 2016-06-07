@@ -11,11 +11,6 @@ public class Registration
 
     public void Generate(Controller controller)
     {
-        
-        System.out.println(controller.GetRequest().getParameter("a"));
-        controller.BackToR = "1".equals(controller.GetRequest().getParameter("a"));
-        System.out.println(controller.BackToR);
-
         HtmlVisits = "";
 
         DatabaseAccess databaseAccess = new DatabaseAccess();
