@@ -55,7 +55,7 @@ public class Reception
                 String idTerminu = rs.getString(++p);
 
                 HtmlTableRows += "<td>"
-                        + "    <a href=\"#\" class=\"mdl-button mdl-js-button mdl-button--raised\">"
+                        + "    <a href=\"App?op=edit&id=" + idTerminu + "\" class=\"mdl-button mdl-js-button mdl-button--raised\">"
                         + "                                    Edytuj"
                         + "                                </a> &nbsp;"
                         + "    <a id=\"" + idTerminu + "\" class=\"show-dialog mdl-button mdl-js-button mdl-button--raised\">"
@@ -95,7 +95,7 @@ public class Reception
                 String idTerminu = rs2.getString(++p);
 
                 HtmlTableRows2 += "<td>"
-                        + "    <a href=\"#\" class=\"mdl-button mdl-js-button mdl-button--raised\">"
+                        + "    <a href=\"App?op=edit&no=1&id=" + idTerminu + "\" class=\"mdl-button mdl-js-button mdl-button--raised\">"
                         + "                                    Edytuj"
                         + "                                </a> &nbsp;"
                         + "    <a id=\"" + idTerminu + "\" class=\"show-dialog mdl-button mdl-js-button mdl-button--raised\">"

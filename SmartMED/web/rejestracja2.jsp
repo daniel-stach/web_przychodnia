@@ -6,21 +6,16 @@
 
 
 
-<script>
-    var active = 1;
-    $('.mdl-navigation').eq(0).children().eq(active).addClass('active');
-    $('.mdl-navigation').eq(1).children().eq(active).addClass('active');
-</script>
 <header class="header-register">
     <div class="more-section">
-        <div class="section-title mdl-typography--display-1-color-contrast">Rejestracja</div>
+        <div class="section-title mdl-typography--display-1-color-contrast">Zarejestruj pacjenta</div>
 
         <form name="registerForm" onsubmit="return ValidateForm()" method="post" action="App">
 
             <div class="card-container mdl-grid">
                 <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--4dp">
                     <div class="mdl-card__title mdl-color--brown mdl-color-text--white">
-                        <h2 class="mdl-card__title-text" style="color: White;">Wybierz termin</h2>
+                        <h2 class="mdl-card__title-text" style="color: White;">Termin pacjenta</h2>
                     </div>
                     <ul class="dl-list" style="margin-left: -35px; overflow-y: scroll; height:400px;">
 
@@ -30,7 +25,7 @@
                 </div>
                 <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--4dp">
                     <div class="mdl-card__title mdl-color--indigo mdl-color-text--white">
-                        <h2 class="mdl-card__title-text" style="color: White;">Uzupełnij dane</h2>
+                        <h2 class="mdl-card__title-text" style="color: White;">Dane pacjenta</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -58,10 +53,6 @@
                             <label class="mdl-textfield__label" for="phone">Telefon</label>
                             <span class="mdl-textfield__error">Niepoprawny numer telefonu</span>
                         </div>
-                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                            <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label" style="font-size: 9px;">Wyrażam zgodę na przetwarzanie moich danych</span>
-                        </label>
                     </div>
                     <div class="mdl-card__actions">
 
@@ -102,10 +93,6 @@
 
         var phone = document.forms["registerForm"]["phone"].value;
         if (phone === null || phone === "") {
-            result = false;
-        }
-
-        if (!$('#checkbox-2').prop('checked')) {
             result = false;
         }
 
